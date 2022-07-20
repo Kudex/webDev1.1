@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
         newFilm = `${newFilm.substring(0, 22)}...`;
       }
 
-      if(favorite){
+      if (favorite) {
         console.log("Добавляем любимый фильм");
       }
       movieDB.movies.push(newFilm);
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
     films.forEach((film, i) => {
       parent.innerHTML += `
           <li class="promo__interactive-item">${i + 1}. ${film}
-              <div class="delete"></div>
+              <div class="delete"></div>;
           </li>
       `;
     });
